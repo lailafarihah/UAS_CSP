@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UAS CSP (Daftar)</title>
+        <link rel="stylesheet" href="baground.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet"">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+    </head>
+
+    <style>
+        h1{
+            font-family:Satisfy;
+        }
+        h2, h3, h4, h5{
+            font-family: Comic Neue;
+        } 
+        h4:hover{
+            background-color: #E8B2C5;
+        }
+    </style>
+
+<script type="text/javascript">
+  function dicek()
+  {
+     var teks=document.formku.tvar1.value;
+     var at= teks.indexOf("@");
+     var dot= teks.lastIndexOf(".");
+     if (at<0)
+     {
+         alert("EMAIL SALAH !");
+     }
+     else if (dot<0)
+     {
+         alert("EMAIL TIDAK LENGKAP !");
+     }
+     else
+     {
+         alert("EMAIL OK");
+     }
+  }
+</script>
+
+<body>
+ 
+    <!--Logo dan Skintific-->
+    <table border="0" bgcolor="#A8C3D8" width="100%"cellpadding="10" cellspacing="0">
+        <tr >
+            <td width="50%" align="right"><img src="img/Beranda/Logo.png" alt="" width="120px"></td>
+            <td><font color="white" size="5px"><h1 align = "left">Skintific</h1></font></td>
+        </tr>
+      </table>
+  
+  
+    <section id="menu">
+        <table border="0" bgcolor="#A8C3D8" width="100%">
+          <tr>
+            <td>
+                <font color="#A8C3D8"><h2>2</h2></font>
+            </td>
+            <td width="90%">
+              <nav class="navbar navbar-expand-lg  bg-transparent" class="navbar bg-dark" data-bs-theme="dark">
+                <div class="container-fluid ">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="index.html" ><font color="white"><h4> &nbsp Beranda &nbsp</h4></font></a>
+                      </li>
+                      <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="Produk.html" ><font color="white"><h4> &nbsp Produk &nbsp</h4></font></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Pembelian.html"><font color="white"><h4> &nbsp Pembelian &nbsp</h4></font></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Daftar.html"><font color="white"><h4> &nbsp Daftar &nbsp</h4></font></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Kontak.html"><font color="white"><h4> &nbsp Kontak &nbsp</h4></font></a>
+                      </li>
+                      
+                      
+                      <!-- <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+    
+  
+            </td>
+            <td>
+              <font color="#A8C3D8"><h2>2</h2></font>
+            </td>
+          </tr>
+        </table>
+          
+    </section>
+  
+    <!--Lingkaran-->
+    <table width="100%">
+        <tr>
+            <img src="img/Beranda/ling biru.png" alt="" width="100%">
+        </tr>
+    </table><br>
+
+     <!--Judul Menu-->
+     <center><table border="0" bgcolor="#E8B2C5" width="90%">
+      <tr >
+          <td><font color="white" size="5px" align = "center"><h1 >Daftar Customer / Admin</h1></font></td>
+      </tr>
+  </table></center>
+
+  <!--Judul Isi-->
+  <table width="90%">
+      <tr>
+          <center><img src="img/Beranda/ling biru.png" alt="" width="90%"></center>
+      </tr>
+      <tr><br><font color="#3B5263" align ="center" size="5px"><h1>Masukkan Data Anda</h1>  </tr>
+          <tr>
+              
+              <center><img src="img/Beranda/garis batas.png" alt="" width="90%"></center></tr>
+                  
+          </tr>
+  </table><br></center>
+
+  <!--Isi FORM-->
+    <div class="container">
+    <center><table width="100%" border="0">
+    <tr>
+      <td width="25%"><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>VALIDASI EMAIL</p></b></td>
+      <td>
+        <form name="formku">
+          Masukkan alamat e-mail: <input type="text" name="tvar1" />
+          <input type="button" value ="Cek" name ="cmdcek" onclick="dicek()"/>
+        </form>
+      </td>
+    </tr>
+    </table></center>
+    </div>
+
+    <form action="" method="get">
+    <div class="container">
+      <center><table width="100%" border="0">
+          <tr>
+              <td width="50%"><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>NAMA LENGKAP</p></b></td>
+              <td align="right"><input type="text" name="txtnama" size="70" maxlength="15"></td>
+          </tr>
+
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>USERNAME</p></b></td>
+              <td align="right"><input type="text" name="txtusername" size="70" maxlength="15"></td>
+          </tr>
+
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>PASSWORD</p></b></td>
+              <td align="right"><input type="password" name="txtpass" size="70" ></td>
+          </tr>
+
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>RE-TYPE PASSWORD</p></b></td>
+              <td align="right"><input type="password" name="txtrepass" size="70" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+          </tr>
+          
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>ALAMAT</p></b></td>
+              <td><textarea name="txtalamat" id="" cols="70" rows="4"></textarea></td>
+          </tr>
+
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>TANGGAL LAHIR</p></b></td>
+              <td ><input type="date" name="txtdate"></td>
+          </tr>
+
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>JENIS KELAMIN</p></b></td>
+              <td >
+                  <input name="pilihan1" type="radio" value="Perempuan">Perempuan
+                  <input name="pilihan1" type="radio" value="Female">Laki - Laki</td>
+          </tr>
+
+          <tr>
+              <td><font face="Comic Neue" color="#AD325D" size="4px" align="left"><b><p>DAFTAR SEBAGAI</p></b></td>
+              <td><input name="pilihan3" type="radio" value="Customer">Pembeli
+                  <input name="pilihan3" type="radio" value="Admin">Penjual</td>
+          </tr>
+
+          <tr>
+            
+            
+            <td colspan="2" cellpadding="10"><br>
+              <center>
+                <input type="submit" value="Kirim" name="cmdsubmit"> &nbsp; &nbsp; &nbsp;
+                <form action="" id="Daftar">
+                  <input type="button" value="Daftar" onclick="window.alert('Anda Sudah Terdaftar');">
+                </form> &nbsp; &nbsp; &nbsp;
+                <input type="reset" value="Hapus Data" name="cmdclear">
+              </center>
+            </td>
+         </tr>
+
+      </table></center>
+      </div>
+      </form>
+
+    <!--Lingkaran-->
+    <table width="100%">
+        <tr>
+            <br><img src="img/Beranda/ling biru bawah.png" alt="" width="100%">
+        </tr>
+        
+      </table>
+  
+      <!--Footer-->
+      <table border="0" bgcolor="#A8C3D8" width="100%" >
+          <tr >
+              <td>
+                  <font face="Comic Neue" color="white" size="4px" align="center"><b><p>Copyright Lailatul Farihah @2023</p></b></font>
+              </td>
+          </tr> 
+      </table>
+  
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script>
+          AOS.init();
+      </script>
+  
+    
+</body>
+</html>
